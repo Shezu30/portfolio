@@ -15,11 +15,17 @@ with col2:
 content2 = """Below you can find some of the apps that I built in Python. feel free to contact me."""
 st.write(content2)
 
-col3,col4 = st.columns(2)
+col3,empty_col,col4 = st.columns([1.5,0.5,1.5])
 df = pandas.read_csv("data.csv", sep=";")
 with col3:
     for index,column in df[:10].iterrows():
         st.header(column["title"])
+        st.write(column["description"])
+        st.image("images/" + column["image"])
+        st.write(f"[source code]({column['url']})")
 with col4:
     for index,column in df[10:].iterrows():
         st.header(column["title"])
+        st.write(column["description"])
+        st.image("images/" + column["image"])
+        st.write(f"[source code]({column['url']})")
