@@ -12,7 +12,7 @@ with col2:
     content = """I ,Syed Asad Ali,am a dedicated and results-driven DevOps engineer with a passion for bridging the gap between development and operations to create efficient and reliable software delivery pipelines. With 1.5 years of experience in the field, I have honed my skills in several key areas."""
     st.info(content)
 
-content2 = """Below you can find some of the apps that I built in Python. feel free to contact me."""
+content2 = """Below you can find some of the apps that I built in Python. feel free to contact me at shezu30@gmail.com."""
 st.write(content2)
 
 col3,empty_col,col4 = st.columns([1.5,0.5,1.5])
